@@ -88,5 +88,5 @@
 .img-block {
   width: 470px;
   height: 500px;
-  float: right;
+  display: inline-block;
 }
