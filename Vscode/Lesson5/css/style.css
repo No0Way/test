@@ -14,11 +14,6 @@
   padding: 0 15px;
 }
 
-.pricing {
-  padding: 0 170px 50px 168px;
-  background-color: #f5f5f5;
-}
-
 .section-title {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -53,6 +48,7 @@
   justify-content: center;
   text-align: center;
   color: #86878b;
+  margin-bottom: 83px;
 }
 
 .block {
@@ -62,67 +58,57 @@
 
 .block-content {
   width: 370px;
-  background: #ffffff;
-  border: 2px solid #f5f5f5;
-  margin-top: 79px;
+  background: #e2e2e2;
+  border-radius: 10px;
 }
 
-.block-content.block-content__up {
-  margin-top: 59px;
-  margin-bottom: 20px;
-  box-shadow: 0px 6px 10px 0px #c4c4c4;
+.content-description {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #86878b;
+  padding-top: 38px;
+  padding-bottom: 37px;
+  margin-bottom: 46px;
 }
 
-.list__name {
+.price-elem-item {
+  width: 370px;
+  display: flex;
+}
+
+.price-elem-img {
+  width: 70px;
+}
+
+.price-elem-name {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
-  text-align: center;
-  color: #ffffff;
-  background: #333333;
-  border: 2px solid #f5f5f5;
-  padding: 17px;
-  margin-bottom: -2px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-.list__price {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  color: #ffffff;
-  background: #333333;
-  border: 2px solid #f5f5f5;
-  padding: 30px;
-  margin-bottom: -2px;
-}
-
-.list__descr {
+.price-elem-text {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.5);
-  background: #333333;
-  border: 2px solid #f5f5f5;
-  padding: 15px;
-}
-
-.block-content__list {
-  background: #ffffff;
-  border: 1px solid #f5f5f5;
-  padding: 15px 0;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: #86878b;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin-top: 15px;
+  margin-left: 30px;
 }
