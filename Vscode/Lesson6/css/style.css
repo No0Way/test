@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-block {
+  display: flex;
+  background-color: black;
+}
+
+.img-header {
+  width: 87px;
+  height: 31px;
+  margin: 22px 330px 21px 115px;
+}
+
+.nav-list {
+  display: flex;
+  background-color: black;
+}
+
+.nav-list__item {
+  padding-top: 33px;
+  padding-bottom: 31px;
+  padding-left: 28px;
+  padding-right: 28px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-list__item a {
+  color: #ffffff;
+}
+
+.block-axit {
+  position: relative;
+  z-index: 1;
+  padding: 230px 90px 163px;
+  background-image: url("../assets/street.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.block-axit-background {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.img-axit {
+  position: relative;
+  z-index: 5;
+  width: 270px;
+}
+
+.axure-title {
+  position: relative;
+  z-index: 5;
+  max-width: 670px;
+  width: 100%;
+  height: 168px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 50px 0px 55px;
+}
+
+.axure-descr {
+  position: relative;
+  width: 270px;
+  height: 42px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  padding: 40px 0px;
+}
+
+.axure-descr::before {
+  position: absolute;
+  content: "";
+  width: 170px;
+  height: 1px;
+  background: #ffffff;
+  top: 0;
+}
+
+.button-dwnld {
+  position: relative;
+  z-index: 5;
+  background: none;
+  width: 270px;
+  height: 58px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+
+  color: #ffffff;
+  border-color: #ffffff;
+  border-style: solid;
+}
+
+/* .form-free-trial {
+  width: 470px;
+  background: #e2e2e2;
+}
+
+.free-trial-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #333333;
+}
+
+.button-getstarted {
+  background: #ec7979;
+  width: 470px;
+  height: 58px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+
+  text-align: center;
+
+  color: #ffffff;
+  border-color: #ec7979;
+  border-style: solid;
+} */
+
+.block-design {
+  position: relative;
+  z-index: 5;
+  background-image: url("../assets/bigcity.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 160px;
+}
+
+.design-title {
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 40px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.design-descr {
+  position: relative;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 73px;
+  display: flex;
+  justify-content: center;
+}
+
+.design-descr:before {
+  position: absolute;
+  content: "";
+  width: 170px;
+  height: 1px;
+  background: #ffffff;
+  top: 0;
+}
+
+.button-dwnld-des {
+  position: relative;
+  background: none;
+  width: 370px;
+  height: 58px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+
+  color: #ffffff;
+  border-color: #ffffff;
+  border-style: solid;
+  margin-left: 245px;
+}
