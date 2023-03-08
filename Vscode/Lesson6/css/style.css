@@ -118,6 +118,10 @@
 }
 
 .button-dwnld {
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  display: flex;
   position: relative;
   z-index: 5;
   background: none;
@@ -228,6 +232,10 @@
 }
 
 .button-dwnld-des {
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  display: flex;
   position: relative;
   background: none;
   width: 370px;
