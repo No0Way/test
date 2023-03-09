@@ -17,13 +17,14 @@
 
 .header-block {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: black;
 }
 
 .img-header {
   width: 87px;
   height: 31px;
-  margin: 22px 330px 21px 115px;
 }
 
 .nav-list {
@@ -32,18 +33,12 @@
 }
 
 .nav-list__item {
-  padding-top: 33px;
-  padding-bottom: 31px;
-  padding-left: 28px;
-  padding-right: 28px;
+  padding: 28px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  display: flex;
-  align-items: center;
-  text-align: center;
 }
 
 .nav-list__item a {
