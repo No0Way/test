@@ -14,7 +14,7 @@
   padding: 0 15px;
 }
 
-.section-title {
+.section-title-cust {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -38,7 +38,7 @@
   border: none;
 }
 
-.section-description {
+.section-description-cust {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
@@ -62,7 +62,7 @@
   border-radius: 10px;
 }
 
-.content-description {
+.content-description-cust {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
