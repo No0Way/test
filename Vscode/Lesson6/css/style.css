@@ -149,10 +149,6 @@
   background: #ffffff;
 }
 
-.form-title:nth-child(3) {
-  color: #b14e4e;
-}
-
 .form-title h3 {
   font-family: "Open Sans";
   font-style: normal;
@@ -166,10 +162,6 @@
   color: #333333;
   padding-top: 37px;
   padding-bottom: 36px;
-}
-
-.form-title h3:nth-child(3) {
-  color: #b14e4e;
 }
 
 .inform-contacts {
@@ -252,14 +244,21 @@
 
 .social-icons {
   display: flex;
-  align-content: space-around;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
 .social-icons__item {
-  padding-left: 50px;
+  margin-right: 22px;
+  margin-left: 22px;
+  transition: 0.3s;
+
   font-size: 53px;
   color: #cccccc;
+}
+
+.social-icons__item:hover {
+  font-size: 59px;
+  color: purple;
 }
 
 .wrapper {
@@ -493,6 +492,12 @@
   margin-top: 59px;
   margin-bottom: 20px;
   box-shadow: 0px 6px 10px 0px #c4c4c4;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.block-content.block-content__up:hover {
+  box-shadow: 0px 15px 30px 0px #777777;
 }
 
 .list__name {
@@ -897,6 +902,15 @@
 .footer-img svg {
   margin-right: 24px;
   margin-left: 24px;
+  transition: 0.3s;
+  fill: #cccccc;
+}
+
+.footer-img svg:hover {
+  width: 60px;
+  height: 60px;
+  fill: purple;
+  cursor: pointer;
 }
 
 .block-footer-descr {
