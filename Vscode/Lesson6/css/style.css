@@ -169,6 +169,15 @@
   padding-bottom: 7px;
 }
 
+.inform-contacts label {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #bdbdbd;
+}
+
 .inform-contacts input {
   align-items: flex-end;
   width: 370px;
@@ -926,4 +935,16 @@
   justify-content: center;
   padding-top: 32px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.info-contact textarea {
+  width: 150px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  opacity: 0.5;
 }
