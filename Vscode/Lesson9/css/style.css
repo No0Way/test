@@ -147,6 +147,23 @@
   background-color: #fc9fab;
 }
 
+.checkbox-first {
+  padding-left: 37px;
+  background: #f9f0ee;
+  border-radius: 5px;
+}
+
+.checkbox-content {
+  width: 12px;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 30px;
+  color: #9a3c48;
+  padding-left: 37px;
+}
+
 .info-addit {
   align-items: center;
   display: flex;
@@ -154,7 +171,6 @@
 }
 
 .info-addit p {
-  width: 869px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -162,7 +178,7 @@
   line-height: 30px;
   color: #000000;
   opacity: 0.5;
-  padding-left: 71px;
+  padding-left: 22px;
 }
 
 .first-review {
@@ -191,6 +207,7 @@
 }
 
 .message-title h3 {
+  margin-right: 20px;
   width: 75px;
   font-family: "Montserrat";
   font-style: normal;
@@ -201,7 +218,8 @@
 }
 
 .message-title p {
-  padding-right: 1070px;
+  padding-top: 20px;
+
   width: 64px;
   font-family: "Montserrat";
   font-style: normal;
@@ -215,6 +233,7 @@
 }
 
 .message-text p {
+  padding-right: 25px;
   padding-bottom: 30px;
   font-family: "Montserrat";
   font-style: normal;
@@ -228,4 +247,7 @@
 .second-review {
   width: 1240px;
   margin-bottom: 30px;
+  padding-left: 25px;
+  background: #f9f0ee;
+  border-radius: 5px;
 }
