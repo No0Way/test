@@ -101,8 +101,8 @@
 }
 
 .block-comment {
-  position: absolute;
-  left: 110%;
+  position: relative;
+  left: 140%;
 
   display: flex;
   width: 410px;
@@ -113,7 +113,18 @@
   padding-bottom: 18px;
   opacity: 0;
   transition: 0.3s;
-  z-index: 2;
+  z-index: 5;
+}
+
+.block-comment::before {
+  bottom: 35%;
+  right: 99%;
+  position: absolute;
+  content: "";
+  border-top: 20px solid transparent;
+  border-right: 30px solid #c4c4c4;
+  border-bottom: 20px solid transparent;
+  border-left: 0 solid transparent;
 }
 
 .bubble:hover .block-comment {
