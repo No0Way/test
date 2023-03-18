@@ -148,20 +148,41 @@
 }
 
 .checkbox-first {
-  padding-left: 37px;
-  background: #f9f0ee;
-  border-radius: 5px;
+  position: relative;
 }
 
-.checkbox-content {
-  width: 12px;
-  font-family: "Font Awesome 5 Free";
+.checkbox-first input {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-first label {
+  cursor: pointer;
+  font-family: "Montserrat";
   font-style: normal;
-  font-weight: 900;
+  font-weight: 400;
   font-size: 12px;
   line-height: 30px;
-  color: #9a3c48;
-  padding-left: 37px;
+  color: #000000;
+  padding-left: 71px;
+}
+
+.checkbox-first label::after {
+  position: absolute;
+  content: "";
+  left: 25px;
+  width: 26px;
+  height: 23px;
+  background: #f9f0ee;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkbox-first input:checked + label:after {
+  background-image: url("../assets/checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .info-addit {
