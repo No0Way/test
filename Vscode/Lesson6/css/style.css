@@ -1568,7 +1568,10 @@
   }
 
   .block-axure-info {
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .block-axure-info img {
@@ -1586,10 +1589,12 @@
   .axure-descr {
     font-size: 14px;
     line-height: 16px;
-    max-width: 183px;
+    margin: 0 auto;
   }
 
   .axure-descr::before {
+    right: 25%;
+    left: 25%;
     width: 115px;
   }
 
@@ -1597,7 +1602,8 @@
     width: 288px;
     font-size: 18px;
     line-height: 25px;
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
+    margin-bottom: 56px;
   }
 
   .form-title {
@@ -1641,57 +1647,66 @@
     max-width: 300px;
   }
 
+  .block-social-body {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 31px 0 45px 0;
+  }
+
   .block-title-social {
     font-size: 18px;
     line-height: 25px;
-    padding-bottom: 7px;
+    padding-bottom: 13px;
   }
 
   .block-descr-social {
     font-size: 14px;
     line-height: 16px;
     padding-top: 6px;
-    padding-bottom: 13px;
+    padding-bottom: 30px;
   }
 
   .social-icons {
-    gap: 7px;
+    gap: 2px;
   }
 
   .social-icons__item {
-    width: 53px;
+    font-size: 30px;
   }
 
   .tab-head {
     padding-top: 60px;
   }
 
+  .tab-head-bt {
+    padding: 15px 35px;
+  }
+
   .tbody {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 50px;
   }
 
   .tbody-sec {
-    padding-right: 30px;
-    padding-left: 55px;
+    display: flex;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 21px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .section-title-tab h2 {
     font-size: 24px;
     line-height: 33px;
-    padding-top: 27px;
+    padding-top: 36px;
     padding-bottom: 25px;
-  }
-
-  .section-tab-text {
-    max-width: 370px;
+    width: 243px;
   }
 
   .section-tab-text p {
     font-size: 14px;
     line-height: 16px;
-    max-width: 370px;
   }
 
   .button-dwnld {
@@ -1699,13 +1714,12 @@
     margin-bottom: 40px;
     font-size: 18px;
     line-height: 25px;
-    max-width: 150px;
+    max-width: 242px;
     height: 45px;
   }
 
   .img-block img {
-    height: 100%;
-    width: 365px;
+    display: none;
   }
 
   .section-title-awe {
@@ -1726,21 +1740,25 @@
   }
 
   .awesome-elem {
+    display: flex;
     padding-top: 55px;
     padding-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .awesome-elem__item {
-    width: 30%;
+    width: 289px;
+    padding-bottom: 44px;
   }
 
   .awesome-elem-img {
-    width: 65px;
-    height: 65px;
+    width: 80px;
+    height: 80px;
   }
 
   .awesome-elem-img img {
-    width: 60%;
+    width: 70%;
     height: 60%;
   }
 
@@ -1767,12 +1785,21 @@
     line-height: 16px;
   }
 
+  .block-price-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 26px;
+  }
+
   .block-content {
-    width: 32%;
+    margin-top: 27px;
+    width: 100%;
   }
 
   .block-content.block-content__up {
-    width: 34%;
+    width: 100%;
+    margin-top: 27px;
   }
 
   .section-title-cust {
