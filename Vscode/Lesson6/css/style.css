@@ -29,18 +29,23 @@
 }
 
 .nav-list {
-  padding-left: 567px;
   display: flex;
   background-color: black;
 }
 
 .nav-list__item {
   padding: 28px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+  transition: 0.3s;
+}
+
+.nav-list__item:hover {
+  background-color: #ec7979;
+  cursor: pointer;
 }
 
 .nav-list__item a {
@@ -83,7 +88,7 @@
   max-width: 670px;
   width: 100%;
   height: 168px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -97,7 +102,7 @@
   position: relative;
   width: 270px;
   height: 42px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -125,7 +130,7 @@
   background: none;
   width: 270px;
   height: 58px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -137,6 +142,12 @@
   border-style: solid;
 }
 
+.button-dwnload:hover {
+  border-color: purple;
+  color: purple;
+  cursor: pointer;
+}
+
 .block-social-form {
   margin-left: 30px;
 }
@@ -146,12 +157,13 @@
 } */
 
 .form-title {
+  width: 470px;
   border-radius: 10px;
   background: #ffffff;
 }
 
 .form-title h3 {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -166,12 +178,13 @@
 }
 
 .inform-contacts {
+  padding-right: 50px;
   padding-left: 50px;
   padding-bottom: 7px;
 }
 
-.inform-contacts label {
-  font-family: "Open Sans";
+.inform-contacts-input {
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -179,18 +192,18 @@
   color: #bdbdbd;
 }
 
-.inform-contacts input {
+.inform-contacts-input input {
   align-items: flex-end;
   width: 370px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   display: flex;
-
   color: #bdbdbd;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
+  padding-top: 8px;
   margin-bottom: 52px;
   border: none;
   border-bottom: 1px solid #bdbdbd;
@@ -200,7 +213,7 @@
   background: #ec7979;
   width: 470px;
   height: 60px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -213,6 +226,12 @@
   border-style: solid;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+
+.button-getstarted:hover {
+  border-color: #b14e4e;
+  background-color: #b14e4e;
+  cursor: pointer;
 }
 
 .block-social-media {
@@ -228,7 +247,7 @@
 }
 
 .block-title-social {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -240,7 +259,7 @@
 }
 
 .block-descr-social {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -258,16 +277,18 @@
 }
 
 .social-icons__item {
-  margin-right: 22px;
-  margin-left: 22px;
+  width: 70px;
+  margin-right: 11px;
+  margin-left: 11px;
   transition: 0.3s;
 
   font-size: 53px;
   color: #cccccc;
+  transition: 0.3s;
 }
 
 .social-icons__item:hover {
-  font-size: 59px;
+  font-size: 60px;
   color: purple;
 }
 
@@ -304,21 +325,20 @@
 
 .tbody {
   display: flex;
-  justify-content: space-between;
   border: 1px solid #c6cbcd;
-  height: 501px;
-  background: white;
-  padding-bottom: 54px;
+}
+
+.tbody-sec {
   padding-left: 100px;
 }
 
-.section-title-tab {
+.section-title-tab h2 {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 41px;
-  width: 570px;
+
   height: 124px;
   display: flex;
   align-items: center;
@@ -326,7 +346,7 @@
   margin-bottom: 27px;
 }
 
-.tbody-sec p {
+.section-tab-text p {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -351,7 +371,7 @@
   background: #ec7979;
   width: 270px;
   height: 58px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -364,12 +384,17 @@
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
+  transition: 0.3s;
 }
 
-.img-block {
-  width: 470px;
-  height: 500px;
-  display: inline-block;
+.button-dwnld:hover {
+  border-color: #b14e4e;
+  background-color: #b14e4e;
+  cursor: pointer;
+}
+
+.img-block img {
+  display: block;
 }
 
 .section-title-awe {
@@ -409,14 +434,15 @@
 }
 
 .awesome-elem {
+  display: flex;
+  justify-content: space-between;
   padding-top: 110px;
   padding-bottom: 58px;
 }
 
 .awesome-elem__item {
-  display: inline-block;
-  width: 369px;
-  height: 100px;
+  max-width: 369px;
+
   text-align: center;
 }
 
@@ -475,7 +501,7 @@
 }
 
 .section-description-price {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -504,6 +530,7 @@
   box-shadow: 0px 6px 10px 0px #c4c4c4;
   transition: 0.3s;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .block-content.block-content__up:hover {
@@ -511,7 +538,7 @@
 }
 
 .list__name {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -525,7 +552,7 @@
 }
 
 .list__price {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -539,7 +566,7 @@
 }
 
 .list__descr {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -555,7 +582,7 @@
   background: #ffffff;
   border: 1px solid #f5f5f5;
   padding: 15px 0;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -580,7 +607,7 @@
 }
 
 .section-description-cust {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -609,7 +636,7 @@
 
 .content-description-cust {
   position: relative;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -648,7 +675,7 @@
 }
 
 .price-elem-name {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -659,7 +686,7 @@
 }
 
 .price-elem-text {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -697,7 +724,7 @@
 .design-title {
   padding-top: 45px;
   padding-bottom: 40px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -715,7 +742,7 @@
 .design-descr {
   position: relative;
 
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -748,7 +775,7 @@
   background: none;
   width: 370px;
   height: 58px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -759,12 +786,19 @@
   border-style: solid;
   margin-left: auto;
   margin-right: auto;
+  transition: 0.3s;
+}
+
+.button-dwnld-des:hover {
+  border-color: purple;
+  color: purple;
+  cursor: pointer;
 }
 
 .block-contact h2 {
   padding-top: 112px;
   padding-bottom: 40px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -782,7 +816,7 @@
 .block-contact p {
   position: relative;
 
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -812,22 +846,23 @@
 
 .information-contacts {
   display: flex;
+
+  justify-content: space-between;
 }
 
 .info-contact-first {
-  padding-right: 30px;
+  width: 570px;
 }
 
 .info-contact-first input {
   align-items: flex-end;
-  width: 571px;
-  font-family: "Open Sans";
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   display: flex;
-
   color: #bdbdbd;
   padding-bottom: 16px;
   margin-bottom: 50px;
@@ -835,12 +870,9 @@
   border-bottom: 1px solid #bdbdbd;
 }
 
-.info-contact-first input:after {
-  position: absolute;
-  content: "";
-  width: 571px;
-  height: 1px;
-  background: #bdbdbd;
+.info-contact-second-block {
+  width: 570px;
+  margin-left: 10px;
 }
 
 .info-contact-second {
@@ -848,29 +880,17 @@
 }
 
 .info-contact-second textarea {
-  align-items: flex-end;
-  width: 571px;
-  font-family: "Open Sans";
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
-  display: flex;
-
   color: #bdbdbd;
   border: none;
-  height: 100%;
+  height: 207px;
   resize: none;
-
   border-bottom: 1px solid #bdbdbd;
-}
-
-.info-contact-second input:before {
-  position: absolute;
-  content: "";
-  width: 571px;
-  height: 1px;
-  background: #bdbdbd;
 }
 
 .button-send {
@@ -881,7 +901,7 @@
   background: #ec7979;
   width: 370px;
   height: 58px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -893,6 +913,13 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.button-send:hover {
+  border-color: #b14e4e;
+  background-color: #b14e4e;
+  cursor: pointer;
 }
 
 .section-footer {
@@ -907,45 +934,31 @@
 .footer-img {
   justify-content: center;
   display: flex;
+  gap: 35px;
 }
 
 .footer-img svg {
-  margin-right: 24px;
-  margin-left: 24px;
   transition: 0.3s;
   fill: #cccccc;
+  transition: 0.3s;
 }
 
 .footer-img svg:hover {
-  width: 60px;
-  height: 60px;
   fill: purple;
   cursor: pointer;
 }
 
-.block-footer-descr {
-  font-family: "Raleway";
+.block-footer-descr p {
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  display: flex;
+
   align-items: center;
   text-align: center;
   display: flex;
   justify-content: center;
   padding-top: 32px;
   color: rgba(255, 255, 255, 0.5);
-}
-
-.info-contact textarea {
-  width: 150px;
-
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  color: #000000;
-  opacity: 0.5;
 }

@@ -19,7 +19,7 @@
     <header class="header-block">
       <div class="wrapper-main">
         <div class="img-header">
-          <img src="assets/axit.jpg" alt="AXIT" />
+          <a href="#"><img src="assets/axit.jpg" alt="AXIT" /></a>
         </div>
         <nav class="nav">
           <ul class="nav-list">
@@ -50,22 +50,33 @@
               <h3>Try Your FREE Trial Today</h3>
               <form id="free-trial-form" class="block-free-trial">
                 <div class="inform-contacts">
-                  <label for="UserName">Name</label>
-                  <input type="text" name="Name" placeholder="" id="UserName" />
-                  <label for="UserEmail">Email</label>
-                  <input
-                    type="text"
-                    name="Email"
-                    placeholder=""
-                    id="UserEmail"
-                  />
-                  <label for="UserPassword">Password</label>
-                  <input
-                    type="text"
-                    name="Password"
-                    placeholder=""
-                    id="UserPassword"
-                  />
+                  <div class="inform-contacts-input">
+                    <label for="UserName">Name</label>
+                    <input
+                      type="text"
+                      name="Name"
+                      placeholder=""
+                      id="UserName"
+                    />
+                  </div>
+                  <div class="inform-contacts-input">
+                    <label for="UserEmail">Email</label>
+                    <input
+                      type="email"
+                      name="Email"
+                      placeholder=""
+                      id="UserEmail"
+                    />
+                  </div>
+                  <div class="inform-contacts-input">
+                    <label for="UserPassword">Password</label>
+                    <input
+                      type="password"
+                      name="Password"
+                      placeholder=""
+                      id="UserPassword"
+                    />
+                  </div>
                 </div>
                 <button
                   type="submit"
@@ -128,29 +139,31 @@
         </div>
         <div class="tbody">
           <div class="tbody-sec">
-            <h2 class="section-title-tab">
-              Tabs with soft transitioning effect.
-            </h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            </p>
+            <div class="section-title-tab">
+              <h2>Tabs with soft transitioning effect.</h2>
+            </div>
+            <div class="section-tab-text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              </p>
 
-            <p>euismod</p>
+              <p>euismod</p>
 
-            <p>
-              bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
-            </p>
-            <p>viverra</p>
-            <p>
-              justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-              penatibus et magnis dis parturient montes.
-            </p>
+              <p>
+                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
+              </p>
+              <p>viverra</p>
+              <p>
+                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                penatibus et magnis dis parturient montes.
+              </p>
 
-            <p class="section-discription-sec">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            </p>
-            <p>euismod</p>
-            <p>bibendum laoreet.</p>
+              <p class="section-discription-sec">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              </p>
+              <p>euismod</p>
+              <p>bibendum laoreet.</p>
+            </div>
             <a href="#" class="button-dwnld">DOWNLOAD</a>
           </div>
           <div class="img-block">
@@ -355,16 +368,42 @@
         <form id="contact-us-form" class="block-info-contact">
           <div class="information-contacts">
             <div class="info-contact-first">
-              <input type="text" name="Name" placeholder="Name" />
-              <input type="text" name="Email" placeholder="Email" />
-              <input type="text" name="Password" placeholder="Password" />
+              <div class="info-contacts-input">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Name"
+                  id="UserName"
+                />
+                <label for="UserName"></label>
+              </div>
+              <div class="info-contacts-input">
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="Email"
+                  id="UserEmail"
+                />
+                <label for="UserEmail"></label>
+              </div>
+              <div class="info-contacts-input">
+                <input
+                  type="password"
+                  name="Password"
+                  placeholder="Password"
+                  id="UserPassword"
+                />
+                <label for="UserPassword"></label>
+              </div>
             </div>
-            <div class="info-contact-second">
-              <textarea
-                type="text"
-                name="Message"
-                placeholder="Message"
-              ></textarea>
+            <div class="info-contact-second-block">
+              <div class="info-contact-second">
+                <textarea
+                  type="text"
+                  name="Message"
+                  placeholder="Message"
+                ></textarea>
+              </div>
             </div>
           </div>
           <button type="submit" form="contact-us-form" class="button-send">
