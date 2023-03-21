@@ -238,6 +238,7 @@
 
 .block-social-info {
   width: 470px;
+  margin-right: 50px;
 }
 
 .block-title-social {
@@ -266,16 +267,14 @@
 }
 
 .social-icons {
+  gap: 70px;
   display: flex;
   align-items: center;
 }
 
 .social-icons__item {
-  width: 70px;
-  margin-right: 11px;
-  margin-left: 11px;
+  width: 30px;
   transition: 0.3s;
-
   font-size: 53px;
   color: #cccccc;
   transition: 0.3s;
@@ -509,7 +508,7 @@
 }
 
 .block-content {
-  max-width: 370px;
+  width: 33%;
   background: #ffffff;
   border: 2px solid #f5f5f5;
   margin-top: 79px;
@@ -691,9 +690,7 @@
 .design {
   position: relative;
   background-image: url("../assets/bigcity.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .design::before {
@@ -707,12 +704,8 @@
   height: 100%;
 }
 
-.block-design {
-  padding: 50px 160px;
-}
-
 .design-title {
-  padding-top: 45px;
+  padding-top: 105px;
   padding-bottom: 40px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -756,6 +749,10 @@
   top: 0;
 }
 
+.buttn-dwnld-des {
+  padding-bottom: 50px;
+}
+
 .button-dwnld-des {
   flex-wrap: wrap;
   align-content: space-around;
@@ -774,8 +771,7 @@
   color: #ffffff;
   border-color: #ffffff;
   border-style: solid;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   transition: 0.3s;
 }
 
@@ -954,12 +950,16 @@
 }
 
 @media (max-width: 1024px) {
+  * {
+    transition: 0.3s;
+  }
+
   .img-header {
     padding-left: 115px;
   }
 
   .block-axure {
-    padding: 154px 0 130px 115px;
+    padding: 154px 0 130px 40px;
   }
 
   .block-axure-info img {
@@ -992,7 +992,7 @@
   }
 
   .form-title {
-    max-width: 398px;
+    max-width: 350px;
   }
 
   .form-title h3 {
@@ -1014,7 +1014,7 @@
   }
 
   .button-getstarted {
-    max-width: 398px;
+    max-width: 350px;
     font-size: 15px;
     line-height: 20px;
   }
@@ -1046,7 +1046,7 @@
   }
 
   .social-icons__item {
-    margin: auto;
+    font-size: 35px;
   }
 
   .tab-head {
@@ -1250,145 +1250,215 @@
 }
 
 @media (max-width: 768px) {
+  .header-block {
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .burger-btn-act {
+    width: 35px;
+    height: 2px;
+    background: #ffffff;
+    margin-top: 7px;
+    z-index: 4;
+  }
+
+  .burger-menu:active .burger-btn-act:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+    opacity: 1;
+  }
+
+  .nav-list {
+    position: fixed;
+    text-align: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    border-color: #000;
+    z-index: 4;
+    height: 100%;
+    transform: translate(100%);
+    margin-top: 50px;
+  }
+
+  .nav-list:active {
+    transform: translate(0);
+  }
+
   .img-header {
-    padding-left: 75px;
+    padding: 15px 45px;
+  }
+
+  .img-header img {
+    height: 25px;
+    width: 70px;
   }
 
   .block-axure {
-    padding: 120px 0 100px 75px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
   }
 
   .block-axure-info img {
-    height: 31px;
-    width: 100px;
+    display: none;
   }
 
   .block-axure-info h1 {
+    text-align: center;
     font-size: 36px;
     line-height: 42px;
-    max-width: 320px;
+
     margin-bottom: 41px;
   }
 
   .axure-descr {
+    text-align: center;
+    margin: 0 auto;
     font-size: 14px;
     line-height: 16px;
-    max-width: 183px;
+    max-width: 288px;
   }
 
   .axure-descr::before {
-    width: 115px;
+    right: calc(50% - 67px);
+    width: 134px;
   }
 
   .button-dwnload {
+    margin: 0 auto;
     width: 183px;
+    height: 50px;
     font-size: 18px;
     line-height: 25px;
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
+    margin-bottom: 30px;
+  }
+
+  .block-social-form {
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
 
   .form-title {
-    width: 300px;
+    max-width: 288px;
   }
 
   .form-title h3 {
+    padding-top: 25px;
     font-size: 14px;
     line-height: 19px;
   }
 
   .inform-contacts {
-    padding: 35px 40px 32px;
+    padding: 10px 25px 20px;
   }
 
   .inform-contacts-input input {
     font-size: 14px;
     line-height: 19px;
-    max-width: 220px;
+    max-width: 235px;
     margin-bottom: 33px;
     padding-top: 2px;
     padding-bottom: 2px;
   }
 
   .button-getstarted {
-    max-width: 300px;
+    max-width: 288px;
     font-size: 15px;
     line-height: 20px;
   }
 
   .block-social-body {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .block-social-info {
-    max-width: 300px;
+    max-width: 271px;
   }
 
   .block-title-social {
+    padding-top: 30px;
     font-size: 18px;
     line-height: 25px;
-    padding-bottom: 7px;
+    padding-bottom: 13px;
   }
 
   .block-descr-social {
     font-size: 14px;
     line-height: 16px;
     padding-top: 6px;
-    padding-bottom: 13px;
+    padding-bottom: 31px;
   }
 
   .social-icons {
-    gap: 7px;
+    gap: 30px;
+    padding-bottom: 45px;
   }
 
   .social-icons__item {
-    width: 53px;
+    width: auto;
+    font-size: 30px;
   }
 
   .tab-head {
     padding-top: 60px;
   }
 
+  .tab-head-bt {
+    padding: 10px 50px;
+  }
   .tbody {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+    justify-content: center;
+    text-align: center;
   }
 
   .tbody-sec {
     padding-right: 30px;
     padding-left: 55px;
+    padding-bottom: 30px;
   }
 
   .section-title-tab h2 {
+    justify-content: center;
     font-size: 24px;
     line-height: 33px;
-    padding-top: 27px;
-    padding-bottom: 25px;
+    padding-top: 55px;
+    padding-bottom: 15px;
   }
 
   .section-tab-text {
-    max-width: 370px;
+    padding-bottom: 30px;
+    width: auto;
   }
 
   .section-tab-text p {
+    display: inline;
     font-size: 14px;
     line-height: 16px;
-    max-width: 370px;
+    padding-bottom: 30px;
   }
 
   .button-dwnld {
-    margin-top: 37px;
-    margin-bottom: 40px;
+    margin: 0 auto;
     font-size: 18px;
     line-height: 25px;
-    max-width: 150px;
+    max-width: 243px;
     height: 45px;
   }
 
   .img-block img {
-    height: 100%;
-    width: 365px;
+    display: none;
   }
 
   .section-title-awe {
@@ -1409,12 +1479,13 @@
   }
 
   .awesome-elem {
-    padding-top: 55px;
-    padding-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .awesome-elem__item {
-    width: 30%;
+    padding-bottom: 30px;
+    width: 288px;
   }
 
   .awesome-elem-img {
@@ -1443,6 +1514,7 @@
     padding-top: 75px;
     font-size: 24px;
     line-height: 28px;
+    padding-top: 45px;
   }
 
   .section-description-price {
@@ -1450,36 +1522,59 @@
     line-height: 16px;
   }
 
+  .block-price-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .block-content {
-    width: 32%;
+    width: 100%;
   }
 
   .block-content.block-content__up {
-    width: 34%;
+    width: 100%;
   }
 
   .section-title-cust {
     font-size: 24px;
     line-height: 28px;
     padding-top: 95px;
+    padding-top: 45px;
   }
 
   .section-description-cust {
     font-size: 14px;
     line-height: 16px;
+    margin-bottom: 60px;
   }
 
   .lorem-cont {
-    width: 230px;
+    width: 200px;
   }
 
   .content-description-cust {
     font-size: 14px;
     line-height: 16px;
-    padding: 35px 15px;
+    padding: 25px 10px;
+    margin-bottom: 60px;
+  }
+
+  .content-description-cust::before {
+    left: 110px;
+  }
+
+  .price-elem-item {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .price-elements {
+    margin: 0 auto;
   }
 
   .price-img {
+    margin-left: 10px;
+    margin-bottom: 15px;
     width: 47px;
     height: 47px;
   }
@@ -1516,20 +1611,52 @@
   }
 
   .button-dwnld-des {
-    width: 218px;
+    width: 287px;
     font-size: 18px;
     line-height: 25px;
+    border: 1px solid #ffffff;
+  }
+
+  .design {
+    background-size: 100%;
+  }
+
+  .design-title {
+    padding-top: 45px;
+  }
+
+  .block-design {
+    padding: 5px;
+  }
+
+  .block-info-contact {
+    padding-top: 50px;
+  }
+
+  .information-contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-contact-first {
+    width: 100%;
+  }
+
+  .info-contact-second-block {
+    width: 100%;
   }
 
   .block-contact h2 {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
+    padding-top: 45px;
   }
 
   .block-contact p {
     font-size: 14px;
     line-height: 16px;
+    padding-bottom: 55px;
   }
 
   .block-contact p:before {
@@ -1538,6 +1665,12 @@
 
   .button-send {
     width: 218px;
+  }
+
+  .footer-img svg {
+    display: flex;
+    width: 30px;
+    height: 30px;
   }
 
   .block-footer-descr p {
