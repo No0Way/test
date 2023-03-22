@@ -524,6 +524,8 @@
 }
 
 .block-content.block-content__up:hover {
+  margin-top: 40px;
+  margin-bottom: 40px;
   box-shadow: 0px 15px 30px 0px #777777;
 }
 
@@ -1274,6 +1276,15 @@
     opacity: 1;
   }
 
+  .burger-menu:active .burger-btn-act:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu:active .burger-btn-act:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    opacity: 1;
+  }
+
   .nav-list {
     position: fixed;
     text-align: center;
@@ -1281,16 +1292,16 @@
     top: 0;
     left: 0;
     width: 100%;
+    margin-top: 50px;
     background-color: #000;
     border-color: #000;
-    z-index: 4;
+    z-index: 15;
     height: 100%;
     transform: translate(100%);
-    margin-top: 50px;
   }
 
-  .nav-list:active {
-    transform: translate(0);
+  .nav-list.nav-list--active:active {
+    transform: translate(0%);
   }
 
   .img-header {
@@ -1697,7 +1708,7 @@
   .block-axure {
     flex-direction: column;
     align-items: center;
-    padding: 84px 0 43px;
+    padding: 34px 0 30px;
   }
 
   .block-axure-info {
@@ -1762,7 +1773,7 @@
   }
 
   .button-getstarted {
-    max-width: 300px;
+    max-width: 288px;
     font-size: 15px;
     line-height: 20px;
   }
@@ -1778,6 +1789,7 @@
 
   .block-social-info {
     max-width: 300px;
+    margin: 0 auto;
   }
 
   .block-social-body {
@@ -1801,7 +1813,7 @@
   }
 
   .social-icons {
-    gap: 2px;
+    gap: 20px;
   }
 
   .social-icons__item {
@@ -1916,6 +1928,7 @@
   .section-description-price {
     font-size: 14px;
     line-height: 16px;
+    padding-bottom: 35px;
   }
 
   .block-price-info {
@@ -1946,14 +1959,29 @@
     line-height: 16px;
   }
 
+  .block-lorem-cust {
+    display: none;
+  }
+
+  block-lorem-cust:active {
+    display: block;
+    justify-content: center;
+    width: 100%;
+  }
+
   .lorem-cont {
     width: 230px;
+    width: 100%;
   }
 
   .content-description-cust {
     font-size: 14px;
     line-height: 16px;
     padding: 35px 15px;
+  }
+
+  .content-description-cust::before {
+    left: 35px;
   }
 
   .price-img {
@@ -2020,5 +2048,15 @@
   .block-footer-descr p {
     font-size: 14px;
     line-height: 16px;
+  }
+
+  .footer-img {
+    gap: 20px;
+  }
+
+  .footer-img svg {
+    display: flex;
+    width: 20px;
+    height: 20px;
   }
 }
