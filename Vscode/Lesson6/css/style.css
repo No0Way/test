@@ -267,21 +267,18 @@
 }
 
 .social-icons {
-  gap: 70px;
+  gap: 50px;
   display: flex;
   align-items: center;
 }
 
 .social-icons__item {
-  width: 30px;
-  transition: 0.3s;
   font-size: 53px;
   color: #cccccc;
   transition: 0.3s;
 }
 
 .social-icons__item:hover {
-  font-size: 60px;
   color: purple;
 }
 
@@ -595,7 +592,8 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  padding: 50px 20px 50px 20px;
+  padding-top: 95px;
+  padding-bottom: 50px;
 }
 
 .section-description-cust {
@@ -613,6 +611,7 @@
 
 .block-lorem-cust {
   display: flex;
+
   justify-content: space-between;
   padding-bottom: 64px;
 }
@@ -644,7 +643,7 @@
 .content-description-cust::before {
   position: absolute;
   content: "";
-  left: 65px;
+  left: 15%;
   bottom: -20px;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
@@ -1044,11 +1043,11 @@
   }
 
   .social-icons {
-    gap: 10px;
+    gap: 30px;
   }
 
   .social-icons__item {
-    font-size: 35px;
+    font-size: 45px;
   }
 
   .tab-head {
@@ -1128,8 +1127,11 @@
   }
 
   .awesome-elem-img img {
+    display: block;
+    max-width: 100%;
     width: 70%;
     height: 70%;
+    object-fit: contain;
   }
 
   .awesome-elem-text h3 {
@@ -1271,6 +1273,15 @@
     z-index: 4;
   }
 
+  .menu__act_check {
+    opacity: 0;
+  }
+
+  .menu__act_check:checked ~ .nav-list {
+    visibility: visible;
+    left: 0;
+  }
+
   .burger-menu:active .burger-btn-act:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
     opacity: 1;
@@ -1287,10 +1298,12 @@
 
   .nav-list {
     position: fixed;
+    display: block;
+    position: fixed;
     text-align: center;
     flex-direction: column;
     top: 0;
-    left: 0;
+    left: -100%;
     width: 100%;
     margin-top: 50px;
     background-color: #000;
@@ -1300,7 +1313,7 @@
     transform: translate(100%);
   }
 
-  .nav-list.nav-list--active:active {
+  .nav-list:active {
     transform: translate(0%);
   }
 
@@ -1560,23 +1573,24 @@
   }
 
   .lorem-cont {
-    width: 200px;
+    width: 100%;
   }
 
   .content-description-cust {
     font-size: 14px;
     line-height: 16px;
     padding: 25px 10px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   .content-description-cust::before {
-    left: 110px;
+    left: 52%;
   }
 
   .price-elem-item {
     align-items: center;
     flex-direction: column;
+    padding-bottom: 30px;
   }
 
   .price-elements {
@@ -1595,6 +1609,10 @@
     height: 100%;
 
     overflow: hidden;
+  }
+
+  .block-lorem-cust {
+    flex-wrap: wrap;
   }
 
   .price-elem-name {
@@ -1960,7 +1978,8 @@
   }
 
   .block-lorem-cust {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   block-lorem-cust:active {
@@ -1981,7 +2000,7 @@
   }
 
   .content-description-cust::before {
-    left: 35px;
+    left: 210px;
   }
 
   .price-img {
