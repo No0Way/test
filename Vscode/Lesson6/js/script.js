@@ -31,4 +31,5 @@ $('.lorem-content-main').slick({
 
   $('.burger-menu').click(function(event) {
     $('.burger-menu,.nav-list').toggleClass('active');
+    $('.body').toggleClass('lock');
   });
