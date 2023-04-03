@@ -1280,15 +1280,6 @@
     z-index: 4;
   }
 
-  .menu__act_check {
-    opacity: 0;
-  }
-
-  .menu__act_check:checked ~ .nav-list {
-    visibility: visible;
-    left: 0;
-  }
-
   .burger-menu.active .burger-btn-act:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
     opacity: 1;

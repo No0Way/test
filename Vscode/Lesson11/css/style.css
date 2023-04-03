@@ -77,9 +77,6 @@
 
 .nav-list__item a {
   color: #ffffff;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
 }
 
 .nav-list__item::after {
@@ -96,14 +93,9 @@
 }
 
 .nav-list__item:hover::after {
-  width: 110%;
+  width: 100%;
   left: 0;
   right: 0;
-}
-
-.main-line {
-  border: 1px solid #babbc5;
-  width: 1170px;
 }
 
 .info-banner-block {
@@ -192,6 +184,7 @@
   color: #2d3033;
   display: flex;
   justify-content: center;
+  flex-grow: 1;
 }
 
 .information-block p {
@@ -213,7 +206,9 @@
 }
 
 .first-block-content {
-  width: 370px;
+  display: flex;
+  width: 33%;
+  flex-direction: column;
 }
 
 .second-information-block {
@@ -223,7 +218,9 @@
 }
 
 .second-block-content {
-  width: 370px;
+  display: flex;
+  width: 33%;
+  flex-direction: column;
 }
 
 .block-img {
@@ -300,6 +297,8 @@
 
 .team-info {
   width: 25%;
+  display: flex;
+  flex-direction: column;
 }
 
 .team-info h2 {
@@ -328,6 +327,7 @@
 
   color: #ff4343;
   padding-top: 5px;
+  flex-grow: 1;
 }
 
 .team-info p {
@@ -341,6 +341,10 @@
 
   color: #6c7279;
   padding-top: 18px;
+}
+
+.team-photo img {
+  width: 100%;
 }
 
 .team-social-network {
@@ -361,10 +365,27 @@
   transform: scale(1.2);
 }
 
+.block-design-main {
+  display: flex !important;
+}
+
 .block-design {
   display: flex;
   width: 100%;
   background-color: #5c3249;
+}
+
+.slider-item {
+  transition: 0.3s;
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 45px;
 }
 
 .block-designer-image {
@@ -610,6 +631,444 @@
   align-items: center;
   text-align: center;
   text-transform: capitalize;
-  width: 370px;
+  max-width: 370px;
   color: #808080;
+}
+
+@media (max-width: 1024px) {
+  .img-header img {
+    width: 85%;
+  }
+
+  .nav-list__item {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .info-banner-block h1 {
+    font-size: 48px;
+    line-height: 56px;
+    padding-top: 157px;
+    width: 90%;
+  }
+
+  .info-banner-block p {
+    font-size: 18px;
+    line-height: 21px;
+    padding-top: 62px;
+    width: 78%;
+  }
+
+  .banner-button {
+    margin-top: 92px;
+    margin-bottom: 126px;
+    width: 314px;
+    height: 80px;
+  }
+
+  .information-block {
+    padding: 88px 0 80px;
+  }
+
+  .information-block h2 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .information-block p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .block-img img {
+    width: 30%;
+  }
+
+  .block-design-images {
+    padding-bottom: 78px;
+  }
+
+  .block-team-info {
+    gap: 25px;
+    padding-bottom: 78px;
+  }
+
+  .team-info h2 {
+    font-size: 18px;
+    line-height: 21px;
+    padding-top: 25px;
+  }
+
+  .team-info h3 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .team-info p {
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 25px;
+  }
+
+  .team-social-network {
+    padding-top: 39px;
+  }
+
+  .block-designer-info {
+    padding: 47px 104px 110px 88px;
+  }
+
+  .block-designer-info h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .block-designer-info p {
+    font-size: 12px;
+    line-height: 14px;
+    padding-top: 25px;
+  }
+
+  .block-download-info {
+    padding: 78px 0 78px;
+  }
+
+  .block-download-info h2 {
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 25px;
+  }
+
+  .block-download-info p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .download-button {
+    font-size: 18px;
+    line-height: 21px;
+    width: 313px;
+    height: 80px;
+  }
+
+  .block-footer-info {
+    padding: 47px 0 41px;
+    gap: 20px;
+  }
+
+  .block-location h2 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .block-location p {
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 18px;
+  }
+
+  .block-share h2 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .block-share-icons {
+    padding-top: 33px;
+    gap: 23px;
+  }
+
+  .block-activebox h2 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .block-activebox p {
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 16px;
+  }
+
+  .block-footer-copyright {
+    padding: 14px 0 14px;
+  }
+
+  .block-footer-copyright p {
+    font-size: 14px;
+    line-height: 16px;
+    width: 30%;
+  }
+}
+
+@media (max-width: 960px) {
+  .nav-list__item {
+    padding: 21px;
+  }
+
+  .block-designer-info {
+    padding: 30px 70px 65px 70px;
+  }
+
+  .block-designer-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    margin: 19px 30px;
+  }
+
+  .burger-btn-act {
+    width: 35px;
+    height: 3px;
+    background: #ffffff;
+    margin-top: 7px;
+    z-index: 4;
+    transition: 0.3s;
+  }
+
+  .burger-menu:active .burger-btn-act:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+    opacity: 1;
+  }
+
+  .burger-menu:active .burger-btn-act:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu:active .burger-btn-act:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    opacity: 1;
+  }
+
+  .nav-list {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    height: 100%;
+    background: url(../assets/table2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 60px;
+    position: fixed;
+    transform: translate(100%);
+    transition: 0.3s;
+  }
+
+  .nav-list.active {
+    margin-top: 45px;
+    align-items: center;
+    top: 0;
+    flex-direction: column;
+    transform: translate(0);
+  }
+
+  .nav-list__item {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  .block-header {
+    border-bottom: none;
+  }
+
+  .block-design {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block-designer-info {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 660px) {
+  .project-images {
+    width: 50%;
+  }
+
+  .block-team-info {
+    display: block;
+    padding-bottom: 34px;
+  }
+
+  .team-info {
+    width: 100%;
+  }
+
+  .team-info p {
+    padding-top: 38px;
+  }
+
+  .team-social-network {
+    padding-top: 55px;
+    padding-bottom: 49px;
+  }
+
+  .information-block {
+    padding: 68px 0 60px;
+  }
+
+  .first-information-block {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .first-block-content {
+    width: 100%;
+  }
+
+  .second-information-block {
+    padding-top: 30px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .second-block-content {
+    width: 100%;
+  }
+
+  .block-img img {
+    width: 15%;
+  }
+
+  .information-block h2 {
+    padding-top: 30px;
+  }
+
+  .block-footer-info {
+    gap: 15px;
+  }
+
+  .block-share-icons {
+    gap: 10px;
+  }
+
+  .block-footer-copyright p {
+    width: 70%;
+  }
+}
+
+@media (max-width: 450px) {
+  .img-header img {
+    width: 70%;
+  }
+
+  .burger-menu {
+    margin: 15px 5px;
+  }
+
+  .burger-btn-act {
+    width: 24px;
+  }
+
+  .info-banner-block h1 {
+    font-size: 36px;
+    line-height: 42px;
+    padding-top: 70px;
+  }
+
+  .info-banner-block p {
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 33px;
+    width: 100%;
+  }
+
+  .banner-button {
+    margin-top: 51px;
+    margin-bottom: 52px;
+    width: 279px;
+    height: 58px;
+  }
+
+  .information-block {
+    padding-top: 57px;
+    padding-bottom: 35px;
+  }
+
+  .block-design-images {
+    padding-bottom: 35px;
+  }
+
+  .block-team-info {
+    padding-bottom: 1px;
+  }
+
+  .block-designer-info {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 95px;
+
+    align-items: center;
+  }
+
+  .block-download-info {
+    padding-top: 35px;
+    padding-bottom: 45px;
+  }
+
+  .block-download-info p {
+    padding-bottom: 13px;
+  }
+
+  .download-button {
+    width: 279px;
+    height: 78px;
+  }
+
+  .block-footer-info {
+    gap: 65px;
+    padding-top: 34px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block-location {
+    width: 100%;
+  }
+  .block-location p {
+    padding-top: 34px;
+  }
+
+  .block-share {
+    width: 100%;
+  }
+  .block-share-icons {
+    padding-top: 37px;
+  }
+
+  .block-share-icons {
+    gap: 17px;
+  }
+
+  .block-activebox {
+    width: 100%;
+  }
+
+  .block-activebox p {
+    padding-top: 39px;
+  }
+
+  .block-footer-copyright {
+    padding-top: 30px;
+    padding-bottom: 28px;
+  }
 }
